@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.technolodiesWrap {
+    margin-top: 72px;
+}
+
+.technolodies {
+    width: 73%;
+    margin-left: 212px;
+}
+
+.technologies {
+    font-size: 56px;
+    color: #0FB7C0;
+    font-family: "Mont";
+}
+
+.iconstop {
+    text-align: center;
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    font-size: 500px;
+}
+
+.iconsbottom {
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}

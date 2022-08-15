@@ -1,0 +1,17 @@
+.map{
+    margin-top: 72px;
+    margin-left: 212px;
+    margin-bottom: 266px;
+    width:608px;
+    height:615px;
+    background-image: url('../../public/Technologies/image4.svg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ellipse{
+    color: #C4C4C4;
+    margin-left: -75px;
+    font-size: 25px;
+}

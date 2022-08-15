@@ -1,0 +1,61 @@
+.controlButton{
+    width: 93.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerButton{
+    width: 93.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+}
+.expand{
+    color: #F2F2F2;
+    background-color: transparent;
+    border:none;
+    margin-bottom: 24px;
+}
+.footerButtonText{
+    color: #F2F2F2;
+    font-size: 16px; 
+    margin-top: 24px;
+}
+.imageTransorm1{
+    cursor: pointer;
+    padding: 10px;
+    transform: rotate(180deg);
+}
+
+
+.imageTransorm{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.footerLinks{
+    height: 106px;
+    width: 100%;
+    background-color: #F2F2F233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLinks1{
+    height: 106px;
+    width: 100%;
+    background-color: #F2F2F233;
+    display: none;
+};
+
+.socialMediaIcon{
+    margin-right: 32px;
+}
+
+.socialMediaIcon{
+    margin-right: 32px;
+}

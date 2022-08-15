@@ -1,0 +1,91 @@
+.navbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerLogoBlock {
+  margin-left: 60px;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+}
+/* .active{
+  background-color: #0FB7C0;
+}
+.navite{
+  background-color: #F2F2F2;
+} */
+/* .navitem{
+  color: #F2F2F2;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px;
+  font-family: "Mont";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  line-height: 96%;
+} */
+.navitemss{
+  margin-top: 5px;
+}
+/* .activ{
+  color: #0FB7C0;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px;
+  font-family: "Mont";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  line-height: 96%;
+
+} */
+/* .navite{
+  color: #0FB7C0;
+} */
+.rectagle{
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rectagles{
+  width: 12px;
+  height: 5px;
+}
+
+@media screen and (max-width:1354px) {
+  .headerLogoBlock{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1121px) {
+  .headerLogoBlock{
+    margin-left: 25px;
+    width: 230px;
+  }
+  .left {
+    justify-content: space-around;
+    width: 93%;
+  
+  }
+}
+@media screen and (max-width: 991px) {
+  .headerLogoBlock{
+    margin-left: 20px;
+    width: 200px;
+  }
+  .left {
+    width: 94%;
+  
+  }
+  .rectagles{
+    width: 10px;margin: 1px;
+  }
+ 
+}
