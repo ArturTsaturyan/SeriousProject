@@ -54,7 +54,7 @@ function NavLink({ href, exact, children, ...props }) {
 
     return (
         <Link href={href}>
-            <a {...props}>
+            <a {...props} >
                 {children}
             </a>
         </Link>

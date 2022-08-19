@@ -1,4 +1,48 @@
-.softWareWrap{
-    color: white;
-    font-size: 50px;
+.softWareWrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.softWareimage {
+    width: 858px;
+    height: 858px;
+    background: radial-gradient(48.55% 48.55% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(15, 183, 192, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+.softWareTexts{
+    width: 39%;
+    margin-left: 212px;
+}
+
+.softWareText {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 78px;
+    line-height: 94px;
+    font-family: "Mont1";
+}
+
+.softWareText1 {
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    margin-top: 24px;
+}
+
+.softWareText2 {
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-top: 56px;
 }

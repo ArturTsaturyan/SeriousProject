@@ -3,20 +3,63 @@ import Image from 'next/image'
 import Sidebar from "../sidebar/sidebar"
 import styles from "./header.module.css"
 import { NavLink } from '../IsActiv/IsActiv';
+import { useScroll } from './useScroll';
 // import { NavLinkC } from '../IsActivChild/IsActivChild'
 
 
-
 const Header = () => {
+useScroll()
+    const menuItem = [
+        {
+            id: 1,
+            href: "/",
+            nameitem: "About Us"
+        },
+        {
+            id: 2,
+            href: "/technologies",
+            nameitem: "Technologies"
+        }
+    ]
+
+    const menuItem1 = [
+        {
+            id: 3,
+            href: "/clients",
+            nameitem: "Clients"
+        },
+        {
+            id: 4,
+            href: "/courses",
+            nameitem: "Courses"
+        },
+        {
+            id: 5,
+            href: "/careers",
+            nameitem: "Careers"
+        },
+        {
+            id: 6,
+            href: "/shop",
+            nameitem: "Shop"
+        },
+        {
+            id: 7,
+            href: "/contactUs",
+            nameitem: "Contact Us"
+        }
+    ]
     return (
         <header>
             <div className={styles.left}>
                 <div className={styles.headerLogoBlock} >
                     <Image className={styles.siriusLogo} src="/Serious Logo 4 1.png" width={280} height={63} />
                 </div>
-                <nav className={styles.navbar}>
-                    <NavLink href="/" exact className={"navitem"}>About Us</NavLink>
-                    <NavLink href="/technologies" className={"navitem"}>Technologies</NavLink>
+                <nav id="container" className={styles.navbar}>
+                    {menuItem.map(man => (
+                        <NavLink key={man.id} href={man.href} exact className={"navitem"}> {man.nameitem}</NavLink>
+                    ))}
+
                     <div className={styles.navitemss}><NavLink href="/services" className={"navitem"}>Services</NavLink>
                         <div className={styles.rectagle}>
                             <NavLink href='/services' exact className={"navitems"}><div className={styles.rectagles}></div></NavLink>
@@ -26,12 +69,11 @@ const Header = () => {
                             <NavLink href='/services/ceo' exact className={"navitems"}><div className={styles.rectagles}></div></NavLink>
                         </div>
                     </div>
-                    <NavLink href="/clients" exact className={"navitem"}>Clients</NavLink>
-                    <NavLink href="/courses" exact className={"navitem"}>Courses</NavLink>
-                    <NavLink href="/careers" exact className={"navitem"}>Careers</NavLink>
-                    <NavLink href="/shop" exact className={"navitem"}>Shop</NavLink>
-                    <NavLink href="/contactUs" exact className={"navitem"}>Contact Us</NavLink>
+                    {menuItem1.map(man => (
+                        <NavLink key={man.id} href={man.href} exact className={"navitem"}> {man.nameitem}</NavLink>
+                    ))}
                 </nav>
+
                 {/* <nav className={styles.navbar}>
                     <NavLink href="/" exact className={styles.navitem}>About Us</NavLink>
                     <NavLink href="/technologies" className={styles.navitem}>Technologies</NavLink>

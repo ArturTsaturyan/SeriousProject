@@ -10,7 +10,36 @@ import "animate.css"
 
 const Footer = () =>{
   const [footerClick,setFooterClick]=useState(false)
-
+  const footerIkons = [
+    {
+      name:"Clatch",
+      id:1
+    },
+    {
+      name:"Telegram",
+      id:2
+    },
+    {
+      name:"Vk",
+      id:3
+    },
+    {
+      name:"LinkedIn",
+      id:4
+    },
+    {
+      name: "Fb",
+      id:5
+    },
+    {
+      name:"Instagram",
+      id:6
+    },
+    {
+      name:"WatsApp",
+      id:7
+    },
+  ]
 
 
    return(
@@ -27,11 +56,10 @@ const Footer = () =>{
 
       </div>
       <div className={footerClick ? `${styles.footerLinks} animate__animated animate__shakeY animate__slow` :`${styles.footerLinks1}`} >
-        {["Clatch","Telegram","Vk","LinkedIn","Fb","Instagram","WatsApp"].map((icn)=>(
-           <Link href="#"><a className={styles.socialMediaIcon}><Image src={"/SocialMediaIcons/"+ icn + ".svg"} width={42} height={42}/></a></Link>
+        {footerIkons.map((icn)=>(
+           <Link key={icn.id}  href="#"><a className={styles.socialMediaIcon}><Image src={"/SocialMediaIcons/"+ icn.name + ".svg"} width={42} height={42}/></a></Link>
         ))}
       
-       
      </div>
     </div>
    )

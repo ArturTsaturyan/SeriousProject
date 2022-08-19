@@ -22,7 +22,7 @@
     margin-left: 11%;
     margin-top: 24px;
     color: #F2F2F2;
-    font-family: "Mont1";
+    font-family: "Mont";
     font-weight: 950;
     font-size: 24px;
     line-height: 31.2px;
@@ -34,7 +34,7 @@
     margin-left: 11%;
     margin-top: 18px;
     color: #F2F2F2;
-    font-family: "Mont";
+    font-family: "Mont1";
     font-weight: 700;
     font-size: 24px;
     line-height: 31.2px;
@@ -58,6 +58,7 @@
 @media screen and (max-width:1610px) {
 
     .homeText {
+        margin-top: 11%;
         font-size: 70px;
         width: 70%;
     }

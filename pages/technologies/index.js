@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Technologies = () => {
     return (
-        <div className={styles.technolodiesWrap}>
+        <div className={`${styles.technolodiesWrap} animate__animated animate__backInLeft animate__slow`}>
             <div className={styles.technolodies}>
                 <div className={styles.technologies}>Technologies</div>
                 <div className={styles.iconstop}>
