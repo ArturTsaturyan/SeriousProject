@@ -1,17 +1,104 @@
-.map{
+.contactUsWrap {
+    display: flex;
+}
+
+.map {
     margin-top: 72px;
     margin-left: 212px;
     margin-bottom: 266px;
-    width:608px;
-    height:615px;
-    background-image: url('../../public/Technologies1/image4.svg');
+    width: 608px;
+    height: 615px;
+    background-image: url('../../public/ContactUs/Map.svg');
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ellipse{
+
+.ellipse {
     color: #C4C4C4;
     margin-left: -75px;
     font-size: 25px;
+}
+
+.phonEm {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+
+.textContact {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    color: #0FB7C0;
+}
+
+.phon {
+    color: #F2F2F2;
+}
+
+.email {
+    color: #F2F2F2;
+}
+
+.phonNum {
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 12px;
+    color: #F2F2F2;
+    margin-right: 56px;
+}
+
+.phonEmail {
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+.containerEmP {
+    width: 632px;
+    height: 615px;
+    margin-left: 128px;
+    margin-top: 72px;
+    margin-right: 213px;
+}
+
+.formInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bfbfbf;
+    background-color: transparent;
+    height: 73px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F2F2F2;
+    font-family: 'Mont1';
+    font-style: normal;
+    line-height: 23px;
+}
+
+.formButton {
+    width: 280px;
+    height: 78px;
+    margin-top: 55px;
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F2F2F2;
+    background-color: transparent;
+    border: 1px solid #bfbfbf;
 }
