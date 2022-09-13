@@ -1,24 +1,23 @@
-// import Link from 'next/link'
 import Image from 'next/image'
 import Sidebar from "../sidebar/sidebar"
 import styles from "./header.module.css"
 import { NavLink } from '../IsActiv/IsActiv';
 import { useScroll } from './useScroll';
-// import { NavLinkC } from '../IsActivChild/IsActivChild'
-
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-useScroll()
+
+    useScroll()
     const menuItem = [
         {
             id: 1,
             href: "/",
-            nameitem: "About Us"
+            nameitem: "home"
         },
         {
             id: 2,
             href: "/technologies",
-            nameitem: "Technologies"
+            nameitem: "technologies"
         }
     ]
 
@@ -26,29 +25,30 @@ useScroll()
         {
             id: 3,
             href: "/clients",
-            nameitem: "Clients"
+            nameitem: "clients"
         },
         {
             id: 4,
             href: "/courses",
-            nameitem: "Courses"
+            nameitem: "courses"
         },
         {
             id: 5,
             href: "/careers",
-            nameitem: "Careers"
+            nameitem: "careers"
         },
         {
             id: 6,
             href: "/shop",
-            nameitem: "Shop"
+            nameitem: "shop"
         },
         {
             id: 7,
             href: "/contactUs",
-            nameitem: "Contact Us"
+            nameitem: "contact"
         }
     ]
+    let {t} = useTranslation()
     return (
         <header>
             <div className={styles.left}>
@@ -56,11 +56,15 @@ useScroll()
                     <Image className={styles.siriusLogo} src="/Serious Logo 4 1.png" width={280} height={63} />
                 </div>
                 <nav id="container" className={styles.navbar}>
-                    {menuItem.map(man => (
-                        <NavLink key={man.id} href={man.href} exact className={"navitem"}> {man.nameitem}</NavLink>
-                    ))}
+                    {menuItem
+                    .map((el) => ({ ...el, nameitem: t(el.nameitem) }))
+                    .map((man) => {
+                            return(
+                                <NavLink key={man.id} href={man.href} exact className={"navitem"}>{man.nameitem}</NavLink>
+                            )
+                        })}
 
-                    <div className={styles.navitemss}><NavLink href="/services" className={"navitem"}>Services</NavLink>
+                    <div className={styles.navitemss}><NavLink href="/services" className={"navitem"}>{t("servises")}</NavLink>
                         <div className={styles.rectagle}>
                             <NavLink href='/services' exact className={"navitems"}><div className={styles.rectagles}></div></NavLink>
                             <NavLink href='/services/mobileapp' exact className={"navitems"}><div className={styles.rectagles}></div></NavLink>
@@ -69,32 +73,15 @@ useScroll()
                             <NavLink href='/services/ceo' exact className={"navitems"}><div className={styles.rectagles}></div></NavLink>
                         </div>
                     </div>
-                    {menuItem1.map(man => (
+                    {menuItem1
+                    .map((el) => ({ ...el, nameitem: t(el.nameitem) }))
+                    .map(man => (
                         <NavLink key={man.id} href={man.href} exact className={"navitem"}> {man.nameitem}</NavLink>
                     ))}
                 </nav>
-
-                {/* <nav className={styles.navbar}>
-                    <NavLink href="/" exact className={styles.navitem}>About Us</NavLink>
-                    <NavLink href="/technologies" className={styles.navitem}>Technologies</NavLink>
-                    <div className={styles.navitemss}><NavLink href="/services" className={styles.navitem}>Services</NavLink>
-                        <div className={styles.rectagle}>
-                            <NavLinkC href='/services' exact className={styles.navite}><div className={styles.rectagles}></div></NavLinkC>
-                            <NavLinkC href='/services/mobileapp' exact className={styles.navite}><div className={styles.rectagles}></div></NavLinkC>
-                            <NavLinkC href='/services/software' exact className={styles.navite}><div className={styles.rectagles}></div></NavLinkC>
-                            <NavLinkC href='/services/crm' exact className={styles.navite}><div className={styles.rectagles}></div></NavLinkC>
-                            <NavLinkC href='/services/ceo' exact className={styles.navite}><div className={styles.rectagles}></div></NavLinkC>
-                        </div>
-                    </div>
-                    <NavLink href="/clients" exact className={styles.navitem}>Clients</NavLink>
-                    <NavLink href="/courses" exact className={styles.navitem}>Courses</NavLink>
-                    <NavLink href="/careers" exact className={styles.navitem}>Careers</NavLink>
-                    <NavLink href="/shop" exact className={styles.navitem}>Shop</NavLink>
-                    <NavLink href="/contactUs" exact className={styles.navitem}>Contact Us</NavLink>
-                </nav> */}
             </div>
 
-            <Sidebar />
+            <Sidebar/>
         </header>
 
 

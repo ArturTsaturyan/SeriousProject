@@ -1,36 +1,39 @@
 .ceoWrap {
     display: flex;
     justify-content: space-around;
+    width: 95%;
 }
 
 .ceoimage {
-    width: 858px;
-    height: 858px;
+    /* width: 858px; */
+    width: 47%;
+    height: auto;
     background: radial-gradient(48.55% 48.55% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(15, 183, 192, 0) 100%);
     display: flex;
     justify-content: center;
-    margin-right: 129px;
+    margin-right: 7%;
+    margin-top: 11vh;
 }
 .ceoTexts{
     width: 40%;
-    margin-left: 212px;
-    margin-top: 160px;
+    margin-left: 11.6%;
+    margin-top: 15vh;
 }
 
 .ceoText {
     color: #FFFFFF;
     font-style: normal;
     font-weight: 900;
-    font-size: 78px;
-    line-height: 94px;
+    font-size: 4.875rem;
+    line-height: 5.875rem;
     font-family: "Mont1";
 }
 .ceoText1 {
     font-family: 'Mont1';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 1.5em;
+    line-height: 1.9375rem;
     color: #FFFFFF;
     margin-top: 56px;
 }

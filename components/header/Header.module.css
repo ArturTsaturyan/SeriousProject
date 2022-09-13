@@ -1,5 +1,5 @@
 .navbar {
-  width: 60%;
+  /* width: 60%; */
   display: flex;
   justify-content: space-between;
 }
@@ -11,71 +11,54 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
+}
 
-}
-/* .active{
-  background-color: #0FB7C0;
-}
-.navite{
-  background-color: #F2F2F2;
-} */
-/* .navitem{
-  color: #F2F2F2;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 5px;
-  font-family: "Mont";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-  line-height: 96%;
-} */
 .navitemss{
   margin-top: 5px;
 }
-/* .activ{
-  color: #0FB7C0;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 5px;
-  font-family: "Mont";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-  line-height: 96%;
 
-} */
-/* .navite{
-  color: #0FB7C0;
-} */
 .rectagle{
+  width: 95%;
   margin-top: 5px;
-  width: 100%;
+  margin-left: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .rectagles{
-  width: 12px;
-  height: 5px;
+  height: 0.4vh;
 }
-
-@media screen and (max-width:1354px) {
-  .headerLogoBlock{
-    width: 250px;
+@media only screen and (max-width: 1839px){
+  .navbar {
+    width: 67%;
   }
 }
-@media screen and (max-width: 1121px) {
+@media only screen and (max-width: 1647px){
+  .navbar {
+    width: 72%;
+  }
+}
+
+@media only screen and (max-width:1354px) {
   .headerLogoBlock{
-    margin-left: 25px;
-    width: 230px;
+    width: 20%;
   }
   .left {
     justify-content: space-around;
     width: 93%;
-  
+  }
+  .navbar {
+    width: 65%;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1113px) {
+  .headerLogoBlock{
+    margin-left: 0;
+  }
+  .left {
+    width: 96%;
+  }
+}
+/* @media screen and (max-width: 991px) {
   .headerLogoBlock{
     margin-left: 20px;
     width: 200px;
@@ -85,7 +68,8 @@
   
   }
   .rectagles{
-    width: 10px;margin: 1px;
+    width: 10px;
+    margin: 1px;
   }
  
-}
+} */

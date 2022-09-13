@@ -1,18 +1,20 @@
 .home {
     color: white;
-    font-size: 50px;
+    font-size: 3.125rem;
+    width: 90%;
 }
 
 .homeText {
-    width: 50%;
-    height: 203px;
+    width: 69%;
+    /* height: 203px; */
     margin-left: 11%;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+    margin-top: 16.5vh;
     color: #0FB7C0;
     font-family: "Mont";
     font-weight: 900;
-    font-size: 78px;
-    line-height: 101.4px;
+    font-size: 4.875rem;
+    line-height: 6.3375rem;
     
 }
 
@@ -24,8 +26,8 @@
     color: #F2F2F2;
     font-family: "Mont";
     font-weight: 950;
-    font-size: 24px;
-    line-height: 31.2px;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
 }
 
 .homeText2 {
@@ -36,60 +38,67 @@
     color: #F2F2F2;
     font-family: "Mont1";
     font-weight: 700;
-    font-size: 24px;
-    line-height: 31.2px;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
     font-style: SemiBold;
 }
-
-@media screen and (max-width:1770px) {
+/* 
+@media screen and (max-width:1816px) {
     .homeText {
         font-size: 75px;
     }
 
 }
 
-@media screen and (max-width:1710px) {
+@media screen and (max-width:1746px) {
     .homeText {
         font-size: 70px;
     }
 
 }
 
-@media screen and (max-width:1610px) {
+@media screen and (max-width:1629px) {
 
     .homeText {
         margin-top: 11%;
-        font-size: 70px;
-        width: 70%;
+        width: 60%;
     }
 }
-
-@media screen and (max-width:1137px) {
+@media screen and (max-width:1529px) {
 
     .homeText {
-        font-size: 50px;
-        width: 60%;
-        height: 60%;
+        margin-top: 5%;
+        font-size: 65px;
     }
     .homeText1 {
-        font-size: 18px;
+        height: auto;;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1358px) {
+
+    .homeText {
+        font-size: 55px;
+        margin-top: 2px;
+    }
+    .homeText1 {
+        font-size: 16px;
     }
     .homeText2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
-@media screen and (max-width:991px) {
-
+@media screen and (max-width:1164px) {
     .homeText {
-        font-size: 45px;
+        font-size: 55px;
         width: 65%;
     }
-    .homeText1 {
-        font-size: 18px;
-    }
-    .homeText2 {
-        font-size: 18px;
-    }
-
 }
+@media screen and (max-width:991px) {
+    .homeText {
+        font-size: 50px;
+    }
+} */

@@ -21,8 +21,10 @@
 }
 .footerButtonText{
     color: #F2F2F2;
-    font-size: 16px; 
-    margin-top: 24px;
+    font-size: 1rem; 
+    /* margin-top: 24px; */
+    margin-top: 2.3vh;
+    font-family: "Mont1";
 }
 .imageTransorm1{
     cursor: pointer;
@@ -37,7 +39,7 @@
 }
 
 .footerLinks{
-    height: 106px;
+    height: 9.8vh;
     width: 100%;
     background-color: #F2F2F233;
     display: flex;
@@ -46,16 +48,37 @@
 }
 
 .footerLinks1{
-    height: 106px;
-    width: 100%;
-    background-color: #F2F2F233;
     display: none;
 };
 
 .socialMediaIcon{
-    margin-right: 32px;
+    margin-right: 1.72%;
 }
 
 .socialMediaIcon{
-    margin-right: 32px;
+    margin-right: 1.72%;
 }
+/* @media only screen and (max-width:1629px) {
+    .footerLinks{
+        height: 75px;
+    };
+    .footerButtonText{
+        font-size: 14px; 
+        margin-top: 10px;
+    }
+    .expand{
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (max-width:1354px) {
+    .footerLinks{
+        height: 70px;
+    };
+    .footerButtonText{
+        font-size: 14px; 
+        margin-top: 10px;
+    }
+    .expand{
+        margin-bottom: 8px;
+    }
+  } */
