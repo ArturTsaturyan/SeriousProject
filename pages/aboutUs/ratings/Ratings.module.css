@@ -1,0 +1,31 @@
+.ratingWrap{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.ratingGroup{
+    width: 95%;
+}
+.ratingsIcon{
+    width: 222px;
+    height: 24vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.ratingTitel{
+    font-size: 4em;
+    color: #0fb7c0;
+    text-align: center;
+    margin-top: 10vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    .ratingWrap{
+        width: 100%;
+    }
+}

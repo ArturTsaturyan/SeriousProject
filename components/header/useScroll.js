@@ -70,5 +70,5 @@ export const useScroll = () => {
       return () => {
         window.removeEventListener('wheel', scrollListener);
       };
-    }, [acrollDown, scrollTop,pathname]);
+    }, [acrollDown,scrollTop,pathname]);
 };

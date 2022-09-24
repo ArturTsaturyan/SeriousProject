@@ -5,6 +5,25 @@ const navItems = [
     path: '/',
   },
   {
+    name: 'aboutUs',
+    text: 'AboutUse',
+    path: '/aboutUs',
+    children: [
+      {
+        name: 'aboutUs',
+        path: '/aboutUs',
+      },
+      {
+        name: 'delivery',
+        path: '/aboutUs/delivery',
+      },
+      {
+        name: 'ratings',
+        path: '/aboutUs/ratings',
+      },
+    ],
+  },
+  {
     name: 'technologies',
     text: 'Technologies',
     path: '/technologies',
@@ -41,22 +60,22 @@ const navItems = [
     text: 'Clients',
     path: "/clients",
   },
-  {
-    name: "courses",
-    text: "Courses",
-    path: "/courses",
-  },
+  // {
+  //   name: "courses",
+  //   text: "Courses",
+  //   path: "/courses",
+  // },
 
   {
     name: "careers",
     text: "Careers",
     path: "/careers",
   },
-  {
-    name: "shop",
-    text: "Shop",
-    path: "/shop",
-  },
+  // {
+  //   name: "shop",
+  //   text: "Shop",
+  //   path: "/shop",
+  // },
   {
     name: "contactUs",
     text: "Contact Us",

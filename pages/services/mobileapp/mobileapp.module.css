@@ -2,28 +2,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 95%;
+    margin-top: 12vh;
 }
 
 .mobileImage {
-    width: 858px;
-    height: 858px;
+    width: 47%;
     background: radial-gradient(48.55% 48.55% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(15, 183, 192, 0) 100%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -70px;
+    margin-left: 6%;
 }
 .mobileTexts{
-    width: 39%;
-    margin-right: 227px;
+    width: 49%;
+    margin-right: 118px;
 }
 
 .mobileText {
     font-family: 'Mont1';
     font-style: normal;
     font-weight: 900;
-    font-size: 78px;
-    line-height: 94px;
+    font-size: 4.875rem;
+    line-height: 5.875rem;
     color: #0FB7C0;
 }
 
@@ -31,8 +30,8 @@
     font-family: 'Mont1';
     font-style: normal;
     font-weight: 900;
-    font-size: 56px;
-    line-height: 73px;
+    font-size: 3.5rem;
+    line-height: 4.5625rem;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     margin-top: 24px;
@@ -42,8 +41,25 @@
     font-family: 'Mont1';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
     color: #FFFFFF;
     margin-top: 67px;
+}
+
+@media only screen and (max-width: 768px){
+    .mobileappWrap{
+        width: 100%;
+        margin-top: 8vh;
+        flex-wrap: wrap;
+    }
+    .mobileTexts{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 10%;
+    }
+    .mobileText,.mobileText1,.mobileText2 {
+        width: 90%;
+        margin-top: 1vh;
+    }  
 }

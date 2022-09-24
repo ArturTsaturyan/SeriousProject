@@ -1,12 +1,14 @@
-import styles from "./Technologies.module.css"
+import styles from "./Technologies.module.css";
 import Image from "next/image";
-
+import useTranslation from 'next-translate/useTranslation';
 
 const Technologies = () => {
+  let {t} = useTranslation()
+
     return (
         <div className={`${styles.technolodiesWrap} animate__animated animate__backInLeft animate__slow`}>
             <div className={styles.technolodies}>
-                <div className={styles.technologies}>Technologies</div>
+                <div className={styles.technologies}>{t("common:technologies")}</div>
                 <div className={styles.iconstop}>
                     {[{
                         icon: "iconsjavascript",
@@ -53,8 +55,8 @@ const Technologies = () => {
                         icontext: "Python",
                         iconstyle: styles.iconsPython
                     }
-                    ].map((item) => (
-                        <div className={`${styles.icons} ${item.iconstyle}`}>
+                    ].map((item,i) => (
+                        <div key={i} className={`${styles.icons} ${item.iconstyle}`}>
                             <Image src={"/Technologies/" + item.icon + ".svg"} width={71.81} height={71.81}/>
                             <p>{item.icontext}</p>
                         </div>
@@ -106,8 +108,8 @@ const Technologies = () => {
                         icontext: "Kotlin",
                         iconstyle: styles.iconsKotlin
                     },
-                    ].map((item) => (
-                        <div className={`${styles.icons} ${item.iconstyle}`}>
+                    ].map((item,i) => (
+                        <div key={i+10} className={`${styles.icons} ${item.iconstyle}`}>
                             <Image src={"/Technologies/" + item.icon + ".svg"} width={71.81} height={71.81} />
                             <p>{item.icontext}</p>
                         </div>

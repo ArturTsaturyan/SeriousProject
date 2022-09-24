@@ -1,4 +1,116 @@
-.careersWrap{
-    color: white;
-    font-size: 50px;
+.careersWrap {
+   width: 90.5%;
+   height: 68vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.careersTitel {
+   width: 43%;
+}
+
+.careersTitel1 {
+   width: 43%;
+   margin-left: 3%;
+}
+
+.titel1 {
+   color: #0fb7c0;
+   font-family: "Mont1";
+   font-size: 3rem;
+}
+
+.titel1Text {
+   margin-top: 5vh;
+   color: #F2F2F2;
+   font-size: 2rem;
+   line-height: 5vh;
+   width: 97%;
+   font-family: "Mont1";
+
+}
+
+.titelTextBold {
+   font-family: "Mont";
+}
+
+.titel {
+   font-size: 3rem;
+   font-family: "Mont1";
+   color: #F2F2F2;
+   line-height: 7vh;
+   margin-bottom: 4vh;
+}
+
+.careersLinks {
+   width: 100%;
+   border-bottom: 2px solid #0fb7c0;
+   margin-top: 2vh;
+}
+
+.careesrLinkTitel {
+   font-size: 2rem;
+   color: #F2F2F2;
+   font-family: "Mont1";
+   font-weight: 300;
+   line-height: 8vh;
+}
+
+.careersLink {
+   text-decoration: none;
+}
+
+.careersLinkTitel1 {
+   font-size: 2rem;
+   color: #F2F2F2;
+   line-height: 6vh;
+}
+
+.careersLinkTitel2 {
+   float: right;
+   color: #0fb7c0;
+   display: flex;
+   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+   .careersWrap {
+      width: 100%;
+      flex-wrap: wrap;
+   }
+
+   .careersTitel {
+      width: 85%;
+      margin-left: 12%;
+      margin-top: 3vh;
+   }
+   .careesrLinkTitel {
+      line-height: 4vh;
+   }
+
+   .careersLinkTitel2 span img {
+      min-height: 76% !important;
+   }
+
+   .careersLinks {
+      width: 84%;
+   }
+
+   .titel {
+      font-size: 2.5rem;
+      line-height: 4vh;
+   }
+
+
+   .careersTitel1 {
+      width: 76%;
+      margin-top: 2vh;
+   }
+
+   .titel1Text {
+      font-size: 1.8rem;
+      line-height: 2.2vh;
+      margin-top: 3vh;
+   }
 }

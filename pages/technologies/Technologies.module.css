@@ -2,15 +2,16 @@
 
 .technolodiesWrap {
     margin-top: 72px;
+    width: 95%;
 }
 
 .technolodies {
     width: 73%;
-    margin-left: 212px;
+    margin-left: 11.7%;
 }
 
 .technologies {
-    font-size: 56px;
+    font-size: 3.5rem;
     color: #0FB7C0;
     font-family: "Mont";
 }
@@ -27,7 +28,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .nav{
-    font-size: 500px;
+    font-size: 31.25rem;
 }
 
 .iconsbottom {
@@ -35,4 +36,24 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px){
+    .technolodiesWrap {
+        width: 100%;
+        margin-top: 2.9vh;
+    }
+    .iconstop,.iconsbottom{
+        width: 80%;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    .icons{
+        margin-top: 4vh;
+        margin-left: 2%;
+    }
+    .technologies {
+        text-align: center;
+    } 
 }

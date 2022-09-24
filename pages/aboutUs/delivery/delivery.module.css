@@ -1,0 +1,85 @@
+.deliveryWrap {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.deliveryTitel {
+    color: #0fb7c0;
+    font-style: normal;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4.875rem;
+    line-height: 5.875rem;
+    font-family: "Mont1";
+    margin-top: 7vh;
+}
+
+.deliveryGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+.deliveryGroups {
+    text-align: center;
+    width: 17%;
+    margin-left: 2%;
+}
+
+.deliveryTitels {
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 5.6vh;
+}
+
+.deliveryText {
+    font-family: 'Mont1';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.4rem;
+    color: #FFFFFF;
+    margin-top: 4vh;
+    text-align: left;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    .deliveryWrap {
+        width: 100%;
+    }
+
+    .deliveryTitel {
+        margin-top: 7vh;
+    }
+
+    .deliveryGroup {
+        flex-wrap: wrap;
+        margin-top: 2vh;
+    }
+
+    .deliveryGroups {
+        width: 35%;
+        margin-top: 2vh;
+    }
+
+    .deliveryGroups span {
+        max-width: 80% !important;
+    }
+
+    .deliveryTitels {
+        margin-top: 4vh;
+    }
+
+    .deliveryText {
+        font-size: 1.4em;
+        margin-top: 2.2vh;
+        margin-left: 8%;
+        line-height: 1.8rem;
+    }
+}

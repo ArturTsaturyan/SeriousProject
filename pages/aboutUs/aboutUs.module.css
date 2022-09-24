@@ -1,0 +1,47 @@
+.aboutUs {
+    width: 78%;
+    margin-left: 16%;
+    margin-top: 10vh;
+}
+
+.aboutUsText {
+    color: #0fb7c0;
+    width: 87.5%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.875rem;
+    line-height: 5.875rem;
+    font-family: "Mont1";
+}
+
+.aboutUsText1 {
+    font-family: 'Mont1';
+    width: 87.5%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 5.6vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutUs {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .aboutUsText1 {
+        text-align: left;
+        margin: auto;
+        width: 75%;
+        margin-top: 6vh;
+        font-size: 2em;
+        line-height: 3rem;
+    }
+
+    .aboutUsText {
+        width: 100%;
+    }
+}

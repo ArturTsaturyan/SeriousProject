@@ -1,0 +1,22 @@
+#map{
+    filter: grayscale(100%) invert(90%);
+    border: 0;
+    height: 58.5vh;
+    width: 100%;
+  }
+  .map{
+    margin-top: 3%;
+    margin-left: 11.5%;
+    width: 32%;
+  }
+  @media only screen and (max-width: 768px){
+    #map{
+      height: 26vh;
+      width: 100%;
+      text-align: center;
+    }
+    .map{
+      width: 70%;
+      margin-left: 0%;
+    }
+  }

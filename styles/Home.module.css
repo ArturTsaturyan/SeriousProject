@@ -1,18 +1,18 @@
 .home {
     color: white;
-    font-size: 50px;
+    font-size: 3.125rem;
+    width: 90%;
 }
 
 .homeText {
-    width: 50%;
-    height: 203px;
+    width: 69%;
     margin-left: 11%;
-    margin-top: 180px;
+    margin-top: 16.5vh;
     color: #0FB7C0;
     font-family: "Mont";
     font-weight: 900;
-    font-size: 78px;
-    line-height: 101.4px;
+    font-size: 4.875rem;
+    line-height: 6.3375rem;
     
 }
 
@@ -24,8 +24,8 @@
     color: #F2F2F2;
     font-family: "Mont";
     font-weight: 950;
-    font-size: 24px;
-    line-height: 31.2px;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
 }
 
 .homeText2 {
@@ -36,60 +36,32 @@
     color: #F2F2F2;
     font-family: "Mont1";
     font-weight: 700;
-    font-size: 24px;
-    line-height: 31.2px;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
     font-style: SemiBold;
 }
 
-@media screen and (max-width:1770px) {
-    .homeText {
-        font-size: 75px;
+@media only screen and (max-width: 768px){
+    .home {
+        width: 100%;
     }
-
-}
-
-@media screen and (max-width:1710px) {
     .homeText {
-        font-size: 70px;
-    }
-
-}
-
-@media screen and (max-width:1610px) {
-
-    .homeText {
-        margin-top: 11%;
-        font-size: 70px;
-        width: 70%;
-    }
-}
-
-@media screen and (max-width:1137px) {
-
-    .homeText {
-        font-size: 50px;
-        width: 60%;
-        height: 60%;
-    }
-    .homeText1 {
-        font-size: 18px;
+        width: 80%;
+        margin-top: 13.5vh;   
     }
     .homeText2 {
-        font-size: 18px;
+        width: 67%;
     }
-
 }
-@media screen and (max-width:991px) {
-
-    .homeText {
-        font-size: 45px;
-        width: 65%;
+@media only screen and (max-width: 480px){
+    .home {
+        width: 100%;
     }
-    .homeText1 {
-        font-size: 18px;
+    .homeText {
+        width: 87%;
+        margin-top: 9.5vh;   
     }
     .homeText2 {
-        font-size: 18px;
+        width: 67%;
     }
-
 }

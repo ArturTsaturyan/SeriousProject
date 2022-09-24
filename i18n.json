@@ -1,0 +1,7 @@
+{
+    "locales": ["eng","rus","arm"],
+    "defaultLocale": "eng",
+    "pages":{
+        "*": ["common"]
+    }
+}
